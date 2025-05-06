@@ -1,3 +1,73 @@
- .current {
-color: green;
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f4f9;
+  color: #333;
+  margin: 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 2em;
+  border-bottom: 3px solid #27ae60;
+  padding-bottom: 5px;
+}
+
+h2 {
+  color: #27ae60;
+  margin-top: 30px;
+}
+
+p {
+  background: #e8f5e9;
+  padding: 15px;
+  border-left: 5px solid #4caf50;
+  border-radius: 4px;
+  max-width: 600px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+  max-width: 600px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Tombol */
+button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 15px 0;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+/* Class khusus */
+.current {
+  color: green;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 3px rgba(0, 100, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid green;
+  padding: 5px;
+}
+
+.current:hover {
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  text-shadow: none;
 }
