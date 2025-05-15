@@ -1,60 +1,121 @@
-LAPORAN TENTANG JAVASCRIPT
+---
+layout: post
+title: "JAVASCRIPT"
+date: 2025-04-25
+---
 
-1. Pendahuluan
-JavaScript adalah salah satu bahasa pemrograman yang paling populer dan banyak digunakan di dunia, terutama untuk pengembangan web. Bahasa ini awalnya dikembangkan oleh Brendan Eich pada tahun 1995 dan kini menjadi bagian penting dalam pengembangan aplikasi web modern bersama dengan HTML dan CSS.
 
-2. Pengertian JavaScript
-JavaScript adalah bahasa pemrograman tingkat tinggi yang bersifat dinamis, berorientasi objek, dan dijalankan di sisi klien (client-side), meskipun kini juga dapat dijalankan di sisi server melalui lingkungan seperti Node.js.
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Laporan JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+      color: #2c3e50;
+    }
+    h1, h2, h3 {
+      color: #34495e;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-left: 4px solid #3498db;
+      overflow-x: auto;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    img {
+      margin-top: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
 
-3. Fungsi dan Kegunaan
-JavaScript digunakan untuk:
+  <h1>Laporan Tentang JavaScript</h1>
 
-Membuat halaman web menjadi interaktif (misalnya animasi, validasi form, slideshow, dll).
+  <h2>1. Pendahuluan</h2>
+  <p>
+    JavaScript adalah salah satu bahasa pemrograman paling populer dan banyak digunakan di dunia, 
+    terutama dalam pengembangan web. Bahasa ini pertama kali dikembangkan oleh <strong>Brendan Eich</strong> pada tahun 1995. 
+    Kini, JavaScript menjadi bagian tak terpisahkan dari pengembangan aplikasi web modern bersama HTML dan CSS.
+  </p>
 
-Mengontrol elemen HTML dan CSS secara dinamis.
+  <h2>2. Pengertian JavaScript</h2>
+  <p>
+    JavaScript adalah bahasa pemrograman tingkat tinggi, bersifat dinamis, dan berorientasi objek. 
+    Awalnya dijalankan di sisi klien (client-side), namun sekarang juga dapat berjalan di sisi server 
+    menggunakan lingkungan seperti <strong>Node.js</strong>.
+  </p>
 
-Membangun aplikasi web modern (Single Page Applications) menggunakan framework seperti React, Vue, dan Angular.
+  <h2>3. Fungsi dan Kegunaan</h2>
+  <p>JavaScript dapat digunakan untuk:</p>
+  <ul>
+    <li>Membuat halaman web menjadi interaktif (misalnya animasi, validasi form, slideshow, dll).</li>
+    <li>Mengontrol elemen HTML dan CSS secara dinamis.</li>
+    <li>Membangun aplikasi web modern (Single Page Applications) menggunakan framework seperti React, Vue, dan Angular.</li>
+    <li>Membangun backend (server-side) menggunakan Node.js.</li>
+    <li>Mengembangkan aplikasi mobile dan desktop lintas platform.</li>
+  </ul>
 
-Membangun backend (server-side) aplikasi menggunakan Node.js.
+  <h2>4. Fitur Utama</h2>
+  <ul>
+    <li><strong>Interaktif:</strong> Memberikan pengalaman pengguna yang dinamis.</li>
+    <li><strong>DOM Manipulation:</strong> Dapat memodifikasi dokumen HTML/CSS secara langsung.</li>
+    <li><strong>Asynchronous Programming:</strong> Mendukung AJAX, Fetch API, dan Promise.</li>
+    <li><strong>Event-Driven:</strong> Merespon interaksi pengguna seperti klik, input, dll.</li>
+    <li><strong>Cross-Platform:</strong> Dapat dijalankan di berbagai perangkat dan browser.</li>
+  </ul>
 
-Mengembangkan aplikasi mobile dan desktop menggunakan teknologi lintas platform.
+  <h2>5. Contoh Kode Sederhana</h2>
+  <p>Contoh JavaScript untuk menampilkan alert saat tombol diklik:</p>
 
-4. Fitur Utama
-Interaktif: Menyediakan interaktivitas tinggi pada halaman web.
+  <pre><code class="language-js">
+// HTML
+&lt;button id="btn"&gt;Klik Saya&lt;/button&gt;
 
-DOM Manipulation: Dapat memanipulasi dokumen HTML/CSS secara real-time.
-
-Asynchronous Programming: Mendukung AJAX dan fetch untuk komunikasi data tanpa reload.
-
-Event-Driven: Bereaksi terhadap aksi pengguna seperti klik atau input.
-
-Cross-Platform: Dapat dijalankan di berbagai platform dan perangkat.
-
-5. Contoh Kode Sederhana
-javascript
-Salin
-Edit
+// JavaScript
 document.getElementById("btn").addEventListener("click", function() {
   alert("Tombol diklik!");
 });
-6. Keunggulan dan Kekurangan
-Keunggulan:
+  </code></pre>
 
-Didukung oleh semua browser modern.
+  <h2>6. Keunggulan dan Kekurangan</h2>
 
-Komunitas besar dan banyak sumber belajar.
+  <h3>Keunggulan:</h3>
+  <ul>
+    <li>Didukung oleh semua browser modern.</li>
+    <li>Komunitas besar dan banyak dokumentasi.</li>
+    <li>Ekosistem luas (tersedia banyak library dan framework).</li>
+  </ul>
 
-Ekosistem luas (banyak library dan framework).
+  <h3>Kekurangan:</h3>
+  <ul>
+    <li>Tidak cocok untuk aplikasi dengan komputasi berat.</li>
+    <li>Keamanan sangat tergantung pada implementasi kode.</li>
+    <li>Sintaks fleksibel kadang membingungkan bagi pemula.</li>
+  </ul>
 
-Kekurangan:
+  <h2>7. Kesimpulan</h2>
+  <p>
+    JavaScript merupakan komponen penting dalam pengembangan web modern. 
+    Dengan kemampuannya yang luas dan dukungan komunitas yang besar, 
+    JavaScript tidak hanya digunakan di sisi klien, tetapi juga berkembang menjadi 
+    bahasa serbaguna untuk server-side dan aplikasi lintas platform.
+  </p>
 
-Kurang cocok untuk aplikasi yang memerlukan komputasi berat.
+  <img src="/assets/images/javascritp.png" alt="Ilustrasi JavaScript" style="width: 300px; height: auto;">
 
-Keamanan tergantung pada implementasi.
-
-Bisa membingungkan bagi pemula karena sintaks yang fleksibel.
-
-7. Kesimpulan
-JavaScript adalah komponen penting dalam pengembangan web modern. Dengan dukungan ekosistem dan komunitas yang besar, JavaScript terus berkembang menjadi bahasa yang serbaguna, digunakan di sisi klien maupun server.
-
-<img src="/assets/images/javascritp.png" style="width: 300px; height: auto;">
+</body>
+</html>
