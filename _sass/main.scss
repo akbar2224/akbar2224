@@ -1,73 +1,89 @@
+$primary-color: #3b7b3e;
+$secondary-color: #fbcb05;
+$font-stack: Helvetica, sans-serif;
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f4f4f9;
-  color: #333;
-  margin: 20px;
-  line-height: 1.6;
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-  color: #2c3e50;
-  font-size: 2em;
-  border-bottom: 3px solid #27ae60;
-  padding-bottom: 5px;
+body {
+  font-family: $font-stack;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  text-align: center;
+  padding: 24px;
+  color: #fff;
+  background-color: $primary-color;
+}
+
+main {
+  padding: 24px;
+  margin-top: 24px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 8px;
+  margin-top: 24px;
+  color: #fff;
+  background-color: $primary-color;
 }
 
 h2 {
-  color: #27ae60;
-  margin-top: 30px;
-}
-
-p {
-  background: #e8f5e9;
-  padding: 15px;
-  border-left: 5px solid #4caf50;
-  border-radius: 4px;
-  max-width: 600px;
-}
-
-ul {
-  list-style-type: square;
-  padding-left: 20px;
-  max-width: 600px;
-}
-
-li {
+  color: #333;
   margin-bottom: 8px;
 }
 
-/* Tombol */
-button {
-  background-color: #e74c3c;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin: 15px 0;
-  border-radius: 5px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+nav {
+  margin: 24px 0;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $primary-color;
+  }
+
+  li {
+    float: left;
+
+    a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 8px 16px;
+      text-decoration: none;
+
+      &:hover:not(.active) {
+        background-color: $secondary-color;
+      }
+    }
+  }
 }
 
-button:hover {
-  background-color: #c0392b;
+.container {
+  width: 88%;
+  margin: auto;
+  overflow: hidden;
 }
 
-/* Class khusus */
-.current {
-  color: green;
-  font-weight: bold;
-  font-size: 1.2em;
-  text-shadow: 1px 1px 3px rgba(0, 100, 0, 0.5);
-  transition: all 0.3s ease-in-out;
-  border-bottom: 2px solid green;
-  padding: 5px;
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 24px auto;
+  background-color: $secondary-color;
 }
 
-.current:hover {
-  color: white;
-  background-color: green;
-  border-radius: 5px;
-  text-shadow: none;
+.active {
+  background-color: $secondary-color;
 }
